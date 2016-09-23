@@ -1,0 +1,520 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="images/xlogo.png" rel="shortcut icon">
+<title>搜索-草芳堂</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<link href="css/sx.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#fenlei{
+	width:100%;
+	padding-bottom:20px;
+	padding-top:10px;
+	background:#e7e7e7;
+	position:fixed;
+	top:-300px;
+	z-index:99;
+	opacity:0;}
+.navbar-nav li{
+	font-size:16px;}
+.aa {
+	margin:0px auto;
+	padding:3px;
+	padding-top:6px;
+}
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+.scrollspy-example {
+height: 1200px;
+overflow: auto;
+position: relative;
+}
+a {  
+outline: none;  
+}    
+  
+a:focus {  
+outline: none;  
+}  
+</style>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a><span style="font-size:28px; color:#900000; top:10px; left:3px;" class="glyphicon glyphicon-grain"></span></a><img src="images/logo.png" height="30"  style="margin:8px 20px 7px 0px;"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">首页</a></li>
+     
+        <li class="dropdown" id="by">
+          <a onmouseover ="omover();" onClick="javascript:window.location.href='jiebiao.html'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">药材分类<span class="caret"></span></a></li>
+       <li><a href="yaofang.html">药方</a></li>
+       <li><a href="yst.html">养生堂</a></li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="药材名-症状">
+          </div>
+          <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+          </form>
+        </li>
+
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.lzjlxf.cn/ht-4/ht-3/admin/login.php" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp&nbsp登录</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-lock"></span>&nbsp&nbsp&nbsp购物袋</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp&nbsp消息</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp&nbsp&nbsp我的收藏</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp&nbsp注册</a></li>
+          </ul>
+        </li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--导航-->
+
+<div id="fenlei"  onmouseout ="omout();">
+ <div class="container" onmouseover ="omover();" >
+   <div class="row" onmouseover ="omover();">
+   <div class="col-md-1"></div>
+   <div class="col-md-11">
+     <ul style="margin-top:20px;" class="top-yy" onmouseover ="omover();">
+       <li><a href="jiebiao.html">解表药</a></li>
+       <li><a href="#">清热药</a></li>
+       <li><a href="#">温里药</a></li>
+       <li><a href="#">泻下药</a></li>
+       <li><a href="#">平肝息风药</a></li>
+     </ul>
+     <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">理气药</a></li>
+       <li><a href="#">化湿药</a></li>
+       <li><a href="#">祛风湿药</a></li>
+       <li><a href="#">利水渗湿药</a></li>
+       <li><a href="#">清热解毒药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">化痰止咳药</a></li>
+       <li><a href="#">止血药</a></li>
+       <li><a href="#">清热凉血药</a></li>
+       <li><a href="#">补益药</a></li>
+       <li><a href="#">开窍药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">安神药</a></li>
+       <li><a href="#">活血化瘀药</a></li>
+       <li><a href="#">收涩药</a></li>
+       <li><a href="#">消食药</a></li>
+       <li><a href="#">涌吐药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">驱虫药</a></li>
+       <li><a href="#">外用药</a></li>
+         </ul>
+   </div>
+
+</div>
+ </div>
+</div>
+<!--轮播结束-->
+<!--四列开始-->
+<!--四列结束-->
+<!--药材分类开始-->
+
+<div class="ss">
+  <div class="ssk">
+  <div class="sss"> <input type="text" name="a" placeholder="药材-症状"  class="sss"  style="padding-left:20px;"/></div>
+  <a href="#"><div class="ssn">搜索</div></a>
+</div>
+</div>
+<div class="hhh"></div>
+   <!--tap-->
+   <div class="container-fluid">
+  <div class="row mid-pic">
+    <div class="col-md-9 col-sm-12 col-xs-12">
+    
+    
+  <ul class="nav nav-tabs" role="tablist" id="feature-tab" style="margin-left:10%">
+        <li class="active"><a href="#tab-yc" role="tab" data-toggle="tab" style="font-size:16px;">药材</a></li>
+        <li><a href="#tab-yf" role="tab" data-toggle="tab" style="font-size:16px;">药方</a></li>
+        <li><a href="#tab-rst" role="tab" data-toggle="tab" style="font-size:16px;">养身堂</a></li>
+    </ul>
+
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-yc">
+            <div class="row feature">
+                
+                 <div class="row mid-pic" style="margin-left:10%; margin-right:0px;" >
+
+
+    <a href="buy.html" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;"> 
+      <img src="images/jiebiao01.png" class="img-responsive medicine-img">
+      <p class="medicine-title">白菊花</p>
+      <p class="medicine-p">功效：疏风清热，平肝明目，解毒。</p>
+    </a>
+
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;">
+      <img src="images/jiebiao02.png" class="img-responsive medicine-img">
+      <p class="medicine-title">白芷</p>
+      <p class="medicine-p">功效：祛风除湿通窍止痛，消肿排脓。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;">
+      <img src="images/jiebiao03.png" class="img-responsive medicine-img">
+      <p class="medicine-title">薄荷</p>
+      <p class="medicine-p">功效：疏散风热，清利头目，利咽透疹。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;">
+      <img src="images/jiebiao04.png" class="img-responsive medicine-img">
+      <p class="medicine-title">苍耳子</p>
+      <p class="medicine-p">功效：散风湿，通鼻窍，止痛。</p>
+    </a>
+</div>
+            <div class="row mid-pic" style="margin-left:10%; margin-right:0px;" >
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;">
+      <img src="images/jiebiao05.png" class="img-responsive medicine-img">
+      <p class="medicine-title">柴胡</p>
+      <p class="medicine-p">功效：和解退热，疏肝解郁，升举阳气。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;">
+      <img src="images/jiebiao06.png" class="img-responsive medicine-img">
+      <p class="medicine-title">蝉蜕</p>
+      <p class="medicine-p">功效：疏风清热，透疹止痒，息风止痉。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item" style="margin-right:0px;">
+      <img src="images/jiebiao07.png" class="img-responsive medicine-img">
+      <p class="medicine-title">怪柳</p>
+      <p class="medicine-p">功效：发汗透疹，发散风热。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao08.png" class="img-responsive medicine-img" style="margin-right:0px;">
+      <p class="medicine-title">葱白</p>
+      <p class="medicine-p">功效：发汗解表，散寒通阳，解毒散结。</p>
+    </a>
+    </div>    
+                
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-yf">
+            <div class="row feature" style="margin-left:0%;">
+                
+                <div class="yfk">
+       <div class="yft"><a href="#"><img src="images/yf-1.png"/></a></div>
+       <ul class="yfl">
+         <li class="yf-1"><a href="yaofangxq.html">竹叶石膏汤</a></li>
+         <li class="yf-2">组成：竹叶6g，石膏50g，人参6g，麦冬20g，半夏9g，甘草6g，粳米10g。</li>
+         <li class="yf-3">主治：伤寒、温病、暑病余热未清，气津两伤证。身热多汗，心胸烦热，气逆欲呕，口干喜饮，气短神疲，或虚烦不寐，舌红少苔，脉虚数。</li>
+       </ul>
+      </div>
+      
+           <div class="yfk">
+       <div class="yft"><a href="#"><img src="images/yf-2.png"/></a></div>
+       <ul class="yfl">
+         <li class="yf-1"><a href="#">桂苓甘露散</a></li>
+         <li class="yf-2">组成：茯苓(去皮)、泽泻各30g，甘草(炙)、石膏、寒水石各60g，白术、官桂(去皮)、猪苓各15g，滑石120g。</li>
+         <li class="yf-3">主治：暑湿证。发热头痛，烦渴引饮，小便不利，及霍乱吐下。临床应用以发热头痛，烦渴引饮，小便不利。</li>
+       </ul>
+      </div>
+      
+           <div class="yfk">
+       <div class="yft"><a href="#"><img src="images/yf-3.png"/></a></div>
+       <ul class="yfl">
+         <li class="yf-1"><a href="#">麻子仁丸</a></li>
+         <li class="yf-2">组成：火麻仁(麻子仁)500克，芍药 250克，枳实250克，大黄500克，厚朴250克，杏仁250克。</li>
+         <li class="yf-3">主治：肠胃燥热，脾约便秘证。大便干结，小便频数，苔微黄少津。治疗以润肠泻热，行气通便为主。</li>
+       </ul>
+      </div>
+      
+           <div class="yfk">
+       <div class="yft"><a href="#"><img src="images/yf-4.png"/></a></div>
+       <ul class="yfl">
+         <li class="yf-1"><a href="#">翘荷汤</a></li>
+         <li class="yf-2">组成：薄荷4.5克 连翘4.5克 生甘草3克 黑栀皮4.5克 桔梗9克 绿豆皮6克。</li>
+         <li class="yf-3">主治：燥气化火，清窍不利，耳鸣目赤，龈胀咽痛者。绿豆皮味甘性寒，与连翘、桅皮合用，能清热解毒。</li>
+       </ul>
+      </div>
+      
+           <div class="yfk">
+       <div class="yft"><a href="#"><img src="images/yf-5.png"/></a></div>
+       <ul class="yfl">
+         <li class="yf-1"><a href="#">杏苏散</a></li>
+         <li class="yf-2">组成：杏仁（去皮尖）、款冬花、前胡、半夏、五味子、麻黄、柴胡、桑白皮、人参、桔梗各等分</li>
+         <li class="yf-3">主治：杏仁气味苦辛微温，入手太阴；款冬花气味辛甘温，入手太阴；前胡气味苦辛微寒，入手足太阴、阳明，其功长于下气。</li>
+       </ul>
+      </div>       
+                
+                
+            </div>
+        </div>
+        <div class="tab-pane" id="tab-rst">
+            <div class="row feature">
+             <div class="yfk" style=" padding-left:1%;">   
+       
+               <div class="yf-1" style=" padding-left:1%; margin-bottom:15px; margin-top:15px;"><a href="#">健康晚上做这三件事排毒养颜保健康<a></div>
+                
+                 <div class="yft"><a href="#"><img src="images/ys2.png"/></a></div>
+       <div class="yfl yf-2">
+        我们都知道帮助身体排毒是一件很重要的事情，因为身体内部的毒素多了，会导致各种疾病出现，因此我们想要保护自己避免毒素过多危害身体，对于排毒就要重视起来，只有这样才能够很好的保护身体健康，避免毒素过多导致自己患上疾病，但是在生活中排毒的方法可说...
+       </div>
+    
+                
+               <div class="clearfix"></div> 
+               <div class="wzdb">
+                 <div class="sj yf-2" style="font-size:16px;">草芳堂 2016/5/8 21:32</div>
+                 <ul class="xx yf-2" style="font-size:16px;">
+                   <li>7评论</li>
+                   <li>41推荐</li>
+                   <li>1329浏览</li>
+                 </ul>
+               </div>
+              <div class="xiana" style="margin-left:1%;"></div>
+              </div>    
+            </div>
+        </div>
+        
+    </div>
+  </div>
+  <div class="col-md-3 hidden-xs hidden-sm" style="padding-left:30px;">
+    
+     <p class="hot-title">热门搜索</p>
+      <hr>
+      <a class="hot-a">补气活血</a>
+      <a class="hot-a">健脾开胃</a>
+      <a class="hot-a">美容养颜</a>
+      <a class="hot-a">清热祛湿</a>
+      <a class="hot-a">利水消肿</a>
+      <a class="hot-a">解表散寒</a>
+      <a class="hot-a">清热祛湿</a>
+    
+   </div>
+  </div>
+  </div>
+  <!--tapover-->
+  
+  
+  
+  
+    
+    
+    
+    
+    
+<nav style="text-align: center; color:#900000">
+  <ul class="pagination pagination-lg"  style="color:#900000;">
+    <li>
+      <a href="#" aria-label="Previous"  style="color:#900000;"
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active" style="background:#900000; border:#900;"><a href="#" style="background:#900000; ">1</a></li>
+    <li><a href="#" style="color:#900000;">2</a></li>
+    <li><a href="#" style="color:#900000;">3</a></li>
+    <li><a href="#" style="color:#900000;">4</a></li>
+    <li><a href="#" style="color:#900000;">5</a></li>
+     <li><a href="#" >...</a></li>
+    <li>
+      <a href="#" aria-label="Next"  style="color:#900000;">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<div class="daohang" >
+<div class="gwc" data-toggle="tooltip" data-placement="left" title="购物车"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></div>
+<div class=" gwc"  data-toggle="tooltip" data-placement="left" title="在线客服"><span class="glyphicon glyphicon-user " aria-hidden="true"></span></div>
+<div class=" gwc"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></div>
+<div class=" gwc"  data-toggle="tooltip" data-placement="left" title="反馈"><span class="glyphicon glyphicon-pencil " aria-hidden="true"></span></div>
+<div id="scrollUp" class=" gwc fh" ><span class="glyphicon glyphicon-chevron-up btn-lg" aria-hidden="true" style="margin-left:-18px;margin-top:-9px;"></span></div>
+</div>
+<!--页脚-->
+<div id="footer" class="footer">
+<div>
+  <a class="service-item">
+    <span>
+      <img src="images/jian.png" class="service-icon">
+    </span>
+    <h3 class="service-title">药监认证</h3>
+    <p class="service-p">获得国家资格认证，值得信赖！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/shou.png" class="service-icon"> 
+    </span>
+    <h3 class="service-title">品牌授权</h3>
+    <p class="service-p">秉承行业高标准，确保正品可信!</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/yin.png" class="service-icon">
+    </span>
+    <h3 class="service-title">隐私包装</h3>
+    <p class="service-p">保密包装，充分保护个人隐私！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/huo.png" class="service-icon">
+    </span>
+    <h3 class="service-title">货到付款</h3>
+    <p class="service-p">先收货后付款，购药更放心！</p>
+  </a>
+
+  </div>
+
+   <div class="clear" ></div>
+
+  <div class="text-margin">
+    <a> &nbsp;&nbsp; &nbsp;关于我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a data-toggle="tooltip" data-placement="top" title="4008-985-985">&nbsp;&nbsp;&nbsp;  联系我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a>&nbsp;&nbsp; &nbsp; 商家入驻&nbsp;&nbsp; &nbsp; </a><span>|<span>
+    <a>  &nbsp;&nbsp;&nbsp;友情连接&nbsp;&nbsp; &nbsp; </a>
+    <br/>
+    <span class="copyr">Copyright © 2016&nbsp;&nbsp;草芳堂lzjlxf.cn 版权所有 | 粤ICP备16034642</span>
+  </div>
+</div>
+<!--页脚-->
+<script type=text/javascript src="js/jquery-1.4.3.min.js"></script>
+
+        <script>
+    var dlNum  =$("#selectList").find("dl");
+    for (i = 0; i < dlNum.length; i++) {
+        $(".hasBeenSelected .clearList").append("<div class=\"selectedInfor selectedShow\" style=\"display:none\"><span></span><label></label><em></em></div>");
+    }
+    
+    var refresh = "true";
+    
+    $(".listIndex a ").live("click",function(){
+        var text =$(this).text();
+        var selectedShow = $(".selectedShow");
+        var textTypeIndex =$(this).parents("dl").index();
+        var textType =$(this).parent("dd").siblings("dt").text();
+        index = textTypeIndex -(2);
+        $(".clearDd").show();
+        $(".selectedShow").eq(index).show();
+        $(this).addClass("selected").siblings().removeClass("selected");
+        selectedShow.eq(index).find("span").text(textType);
+        selectedShow.eq(index).find("label").text(text);
+        var show = $(".selectedShow").length - $(".selectedShow:hidden").length;
+        if (show > 1) {
+            $(".eliminateCriteria").show();
+        }
+       
+    });
+    $(".selectedShow em").live("click",function(){
+        $(this).parents(".selectedShow").hide();
+        var textTypeIndex =$(this).parents(".selectedShow").index();
+        index = textTypeIndex;
+        $(".listIndex").eq(index).find("a").removeClass("selected");
+        
+        if($(".listIndex .selected").length < 2){
+            $(".eliminateCriteria").hide();
+        }
+    });
+    
+    $(".eliminateCriteria").live("click",function(){
+        $(".selectedShow").hide();
+        $(this).hide();
+        $(".listIndex a ").removeClass("selected");
+    }); 
+</script>
+<script src="js/jquery-2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="js/backtotop.js"></script>
+<script src="js/headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+    <script type="text/javascript" >
+  function omover() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").addClass("active");
+			$('#fenlei').css({
+				'top':'50px',
+				'opacity':'1',
+				'transition':'top 0.5s,opacity 0.5s'
+				});
+
+        }
+  function omout() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").removeClass("active");
+			$('#fenlei').css({
+				'top':'-300px',
+				'opacity':'0',
+				'transition':'top 1s,opacity 0.5s'
+				});
+        }
+		
+        
+    </script>
+<script type="text/javascript">
+        $(".navbar-fixed-top").headroom();   
+
+</script>
+<script>
+		$(window).scroll(function() {
+			var windowHeight = $(window).scrollTop();
+				if (windowHeight > 5500) {
+				$('.daohang').css({
+					'display' : 'block',
+					
+				});
+			} else {
+				$('.daohang').css({
+					'display' : 'none'
+				});
+			}
+		});
+	</script>
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<script type="text/javascript">
+            $(function () {
+                $(".pp").hover(
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"block"});
+				    $(this).css({"-webkit-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "-moz-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "box-shadow":" 2px 2px 6px 2px #bbb"})
+                },
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"none"});
+					$(this).css({"-webkit-box-shadow":"0px 0px 3px #fff",
+                                 "-moz-box-shadow":"0px 0px 0px #fff",
+                                 "box-shadow":"0px 0px 0px #fff"})
+                })
+            });
+        </script>
+
+</body>
+</html>

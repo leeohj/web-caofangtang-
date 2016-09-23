@@ -1,0 +1,417 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="images/xlogo.png" rel="shortcut icon">
+<title>草芳堂</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#fenlei{
+	width:100%;
+	padding-bottom:20px;
+	padding-top:10px;
+	background:#e7e7e7;
+	position:fixed;
+	top:-300px;
+	z-index:99;
+	opacity:0;}
+.navbar-nav li{
+	font-size:16px;}
+.aa {
+	margin:0px auto;
+	padding:3px;
+	padding-top:6px;
+}
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+.scrollspy-example {
+height: 1200px;
+overflow: auto;
+position: relative;
+}
+</style>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a><span style="font-size:28px; color:#900000; top:10px; left:3px;" class="glyphicon glyphicon-grain"></span></a><img src="images/logo.png" height="30px"  style="margin:8px 20px 7px 0px;"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">首页</a></li>
+     
+        <li class="dropdown" id="by">
+          <a onmouseover ="omover();" onClick="javascript:window.location.href='jiebiao.html'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">药材分类<span class="caret"></span></a></li>
+       <li><a href="yaofang.html">药方</a></li>
+       <li><a href="yst.html">养生堂</a></li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="药材名-症状">
+          </div>
+          <a href="shousuo.html" target="_blank"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></a>
+          </form>
+        </li>
+
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.lzjlxf.cn/ht-4/ht-3/admin/login.php" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp&nbsp登录</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-lock"></span>&nbsp&nbsp&nbsp购物袋</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp&nbsp消息</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp&nbsp&nbsp我的收藏</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp&nbsp注册</a></li>
+          </ul>
+        </li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--导航-->
+<!--轮播-->
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="#"><img src="images/banner.jpg" alt="..."></a>
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+    <div class="item">
+      <a href="#"><img src="images/banner1.jpg" alt="..."></a>
+      <div class="carousel-caption">
+        ...
+      </div>
+    </div>
+     <div class="item">
+      <a href="#"><img src="images/banner2.jpg" alt="..."></a>
+      <div class="carousel-caption">
+      ...
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div id="fenlei"  onmouseout ="omout();">
+ <div class="container" onmouseover ="omover();" >
+   <div class="row" onmouseover ="omover();">
+   <div class="col-md-1"></div>
+   <div class="col-md-11">
+     <ul style="margin-top:20px;" class="top-yy" onmouseover ="omover();">
+       <li><a href="jiebiao.html" target="_blank">解表药</a></li>
+       <li><a href="#">清热药</a></li>
+       <li><a href="#">温里药</a></li>
+       <li><a href="#">泻下药</a></li>
+       <li><a href="#">平肝息风药</a></li>
+     </ul>
+     <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">理气药</a></li>
+       <li><a href="#">化湿药</a></li>
+       <li><a href="#">祛风湿药</a></li>
+       <li><a href="#">利水渗湿药</a></li>
+       <li><a href="#">清热解毒药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">化痰止咳药</a></li>
+       <li><a href="#">止血药</a></li>
+       <li><a href="#">清热凉血药</a></li>
+       <li><a href="#">补益药</a></li>
+       <li><a href="#">开窍药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">安神药</a></li>
+       <li><a href="#">活血化瘀药</a></li>
+       <li><a href="#">收涩药</a></li>
+       <li><a href="#">消食药</a></li>
+       <li><a href="#">涌吐药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">驱虫药</a></li>
+       <li><a href="#">外用药</a></li>
+         </ul>
+   </div>
+
+</div>
+ </div>
+</div>
+<!--轮播结束-->
+<!--四列开始-->
+<div class="container-fluid">
+  <div class="row mid-pic">
+    <div class="col-md-3 aa col-sm-6 col-xs-6"><a href="#"><img src="images/mid-pic1.jpg"></a></div>
+    <div class="col-md-3 aa col-sm-6 col-xs-6"><a href="#"><img src="images/mid-pic2.jpg"></a></div>
+    <div class="col-md-3 aa col-sm-6 col-xs-6"><a href="#"><img src="images/mid-pic3.jpg"></a></div>   
+    <div class="col-md-3 aa col-sm-6 col-xs-6"><a href="#"><img src="images/mid-pic4.jpg"></a></div>     
+  </div>
+</div>
+<!--四列结束-->
+  <div class="bodyy">
+      <h1 class="wz1">草芳堂优质药材推荐</h1>
+    <h4 class="wz2">这些药材是经过店长精心挑选的，质量保证，放心选购</h4>
+    <div class="xian"></div>
+<!--主体开始-->
+<div class="tt">
+<div class="container-fluid">
+  <div class="row">
+  <!--列表开始-->
+
+  <!--列表结束-->
+  <!--瀑布流开始-->
+    <div class="col-md-12 col-sm-12 col-xs-12">
+      <div class="containe">
+		<div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-8.jpg" /></a><div class="pp2">板桥党参</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：100</p><p class="bdj">本店价：<span class="rmb">¥39</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-14.jpg" /></a><div class="pp2">枸杞</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：123</p><p class="bdj">本店价：<span class="rmb">¥28</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-22.jpg" /></a><div class="pp2">灵芝</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：88</p><p class="bdj">本店价：<span class="rmb">¥188</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-18.jpg" /></a><div class="pp2">莲子</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：231</p><p class="bdj">本店价：<span class="rmb">¥54</span></p></div></div></div>
+    
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-15.jpg" /></a><div class="pp2">藏红花</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：12</p><p class="bdj">本店价：<span class="rmb">¥268</span></p></div></div><div style="height:2px; "></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href=""#><img src="images/pp-17.jpg" /></a><div class="pp2">苦参</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：10</p><p class="bdj">本店价：<span class="rmb">¥121</span></p></div></div><div style="height:1px; "></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-11.jpg" /></a><div class="pp2">鹿茸片</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：33</p><p class="bdj">本店价：<span class="rmb">¥488</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-12.jpg" /></a><div class="pp2">连翘</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：111</p><p class="bdj">本店价：<span class="rmb">¥111</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-16.jpg" /></a><div class="pp2">血茸片</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：30</p><p class="bdj">本店价：<span class="rmb">¥788</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-13.jpg" /></a><div class="pp2">百合</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：124</p><p class="bdj">本店价：<span class="rmb">¥42</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-6.jpg" /></a><div class="pp2">特级藏红花</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：32</p><p class="bdj">本店价：<span class="rmb">¥345</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-20.jpg" /></a><div class="pp2">毛冬青</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：102</p><p class="bdj">本店价：<span class="rmb">¥89</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-4.jpg" /></a><div class="pp2">红藤</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：23</p><p class="bdj">本店价：<span class="rmb">¥28</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-3.jpg" /></a><div class="pp2">马兜玲</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：20</p><p class="bdj">本店价：<span class="rmb">¥33</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-2.jpg" /></a><div class="pp2">血燕窝</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：130</p><p class="bdj">本店价：<span class="rmb">¥998</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-23.jpg" /></a><div class="pp2">韩国灵芝</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：32</p><p class="bdj">本店价：<span class="rmb">¥66</span></p></div></div></div>
+         <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-7.jpg" /></a><div class="pp2">麻黄</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：100</p><p class="bdj">本店价：<span class="rmb">¥55</span></p></div></div></div>
+        <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-1.jpg" /></a><div class="pp2">雪山燕窝</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：120</p><p class="bdj">本店价：<span class="rmb">¥888</span></p></div></div></div>
+    <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-19.jpg" /></a><div class="pp2">龙胆草</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：300</p><p class="bdj">本店价：<span class="rmb">¥66</sapn></p></div></div></div>
+     <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-9.jpg" /></a><div class="pp2">野菊花</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：121</p><p class="bdj">本店价：<span class="rmb">¥24</span></p></div></div></div>
+      <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-17.jpg" /></a><div class="pp2">特级苦参</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：104</p><p class="bdj">本店价：<span class="rmb">¥198</span></p></div></div></div>
+      <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-10.jpg" /></a><div class="pp2">冬虫夏草</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：60</p><p class="bdj">本店价：<span class="rmb">¥688</span></p></div></div></div>
+	  <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-5.jpg" /></a><div class="pp2">葛花</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：198</p><p class="bdj">本店价：<span class="rmb">¥98</span></p></div></div></div>
+      <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-21.jpg" /></a><div class="pp2">木通</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：121</p><p class="bdj">本店价：<span class="rmb">¥24</sapn></p></div></div></div>
+       <div class="pp"><div class="sc"><a href="#">收藏</a></div><div class="gm"><a href="#">购买</a></div><a href="#"><img src="images/pp-6.jpg" /></a><div class="pp2">特级藏红花</div><div class="pp3"><div class="ppdb"><p class="yxl">月销量：32</p><p class="bdj">本店价：<span class="rmb">¥345</span></p></div></div></div>
+	</div>
+     <div class="ttt"></div>
+    </div>
+  <!--瀑布流结束-->
+
+  </div>
+</div>
+</div>
+</div>
+</div>
+<!--主体结束-->
+
+<nav style="text-align: center; color:#900000">
+  <ul class="pagination pagination-lg"  style="color:#900000;">
+    <li>
+      <a href="#" aria-label="Previous"  style="color:#900000;"
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active" style="background:#900000; border:#900;"><a href="#" style="background:#900000; ">1</a></li>
+    <li><a href="#" style="color:#900000;">2</a></li>
+    <li><a href="#" style="color:#900000;">3</a></li>
+    <li><a href="#" style="color:#900000;">4</a></li>
+    <li><a href="#" style="color:#900000;">5</a></li>
+     <li><a href="#" >...</a></li>
+    <li>
+      <a href="#" aria-label="Next"  style="color:#900000;">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<div class="daohang" >
+<div class="gwc" data-toggle="tooltip" data-placement="left" title="购物车"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></div>
+<div class=" gwc"  data-toggle="tooltip" data-placement="left" title="在线客服"><span class="glyphicon glyphicon-user " aria-hidden="true"></span></div>
+<div class=" gwc" id="ewmm" onmouseover ="omovere();" onMouseOut="omoute()"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></div>
+<div class=" gwc"  data-toggle="tooltip" data-placement="left" title="反馈"><span class="glyphicon glyphicon-pencil " aria-hidden="true"></span></div>
+<div id="scrollUp" class=" gwc fh" ><span class="glyphicon glyphicon-chevron-up btn-lg" aria-hidden="true" style="margin-left:-18px;margin-top:-9px;"></span></div>
+</div>
+
+<div id="ewm"><img src="images/ewm.png" width="100%"></div>
+
+<!--页脚-->
+<div id="footer" class="footer">
+<div>
+  <a class="service-item">
+    <span>
+      <img src="images/jian.png" class="service-icon">
+    </span>
+    <h3 class="service-title">药监认证</h3>
+    <p class="service-p">获得国家资格认证，值得信赖！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/shou.png" class="service-icon"> 
+    </span>
+    <h3 class="service-title">品牌授权</h3>
+    <p class="service-p">秉承行业高标准，确保正品可信!</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/yin.png" class="service-icon">
+    </span>
+    <h3 class="service-title">隐私包装</h3>
+    <p class="service-p">保密包装，充分保护个人隐私！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/huo.png" class="service-icon">
+    </span>
+    <h3 class="service-title">货到付款</h3>
+    <p class="service-p">先收货后付款，购药更放心！</p>
+  </a>
+
+  </div>
+
+   <div class="clear" ></div>
+
+  <div class="text-margin">
+    <a> &nbsp;&nbsp; &nbsp;关于我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a data-toggle="tooltip" data-placement="top" title="4008-985-985">&nbsp;&nbsp;&nbsp;  联系我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a>&nbsp;&nbsp; &nbsp; 商家入驻&nbsp;&nbsp; &nbsp; </a><span>|<span>
+    <a>  &nbsp;&nbsp;&nbsp;友情连接&nbsp;&nbsp; &nbsp; </a>
+    <br/>
+    <span class="copyr">Copyright © 2016&nbsp;&nbsp;草芳堂lzjlxf.cn 版权所有 | 粤ICP备16034642</span>
+  </div>
+</div>
+<!--页脚-->
+
+<script src="js/jquery-2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="js/backtotop.js"></script>
+<script src="js/headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+    <script type="text/javascript" >
+  function omover() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").addClass("active");
+			$('#fenlei').css({
+				'top':'50px',
+				'opacity':'1',
+				'transition':'top 0.5s,opacity 0.5s'
+				});
+
+        }
+  function omout() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").removeClass("active");
+			$('#fenlei').css({
+				'top':'-300px',
+				'opacity':'0',
+				'transition':'top 1s,opacity 0.5s'
+				});
+        }
+  function omovere() {
+            var divlist = document.getElementById("ewm");
+        
+	
+			$('#ewm').css({
+				'width':'165px',
+				'height':'185px',
+				'opacity':'1',
+				'right':'40px',
+				'index':'10',
+				'transition':'width 0.5s,height 0.5s'
+				});
+
+        }
+  function omoute() {
+            var divlist = document.getElementById("ewm");
+            
+			$('#ewm').css({
+				
+				'width':'40px',
+				'height':'50px',
+				'opacity':'0',
+				'right':'-240px',
+				'index':'-10'
+				});
+        }
+		
+        
+    </script>
+<script type="text/javascript">
+        $(".navbar-fixed-top").headroom();   
+
+</script>
+<script>
+		$(window).scroll(function() {
+			var windowHeight = $(window).scrollTop();
+				if (windowHeight > 500) {
+				$('.daohang').css({
+					'display' : 'block',
+					
+				});
+			} else {
+				$('.daohang').css({
+					'display' : 'none'
+				});
+			}
+		});
+	</script>
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<script type="text/javascript">
+            $(function () {
+                $(".pp").hover(
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"block"});
+				    $(this).css({"-webkit-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "-moz-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "box-shadow":" 2px 2px 6px 2px #bbb"})
+                },
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"none"});
+					$(this).css({"-webkit-box-shadow":"0px 0px 3px #fff",
+                                 "-moz-box-shadow":"0px 0px 0px #fff",
+                                 "box-shadow":"0px 0px 0px #fff"})
+                })
+            });
+        </script>
+</body>
+</html>

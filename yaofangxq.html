@@ -1,0 +1,446 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="images/xlogo.png" rel="shortcut icon">
+<title>竹叶石膏汤-草芳堂</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#fenlei{
+	width:100%;
+	padding-bottom:20px;
+	padding-top:10px;
+	background:#e7e7e7;
+	position:fixed;
+	top:-300px;
+	z-index:99;
+	opacity:0;}
+.navbar-nav li{
+	font-size:16px;}
+.aa {
+	margin:0px auto;
+	padding:3px;
+	padding-top:6px;
+}
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+.scrollspy-example {
+height: 1200px;
+overflow: auto;
+position: relative;
+}
+</style>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a><span style="font-size:28px; color:#900000; top:10px; left:3px;" class="glyphicon glyphicon-grain"></span></a><img src="images/logo.png" height="30"  style="margin:8px 18px 7px 0px;"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">首页</a></li>
+     
+        <li class="dropdown" id="by">
+          <a onmouseover ="omover();" onClick="javascript:window.location.href='jiebiao.html'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">药材分类<span class="caret"></span></a></li>
+       <li><a href="yaofang.html">药方</a></li>
+       <li><a href="yst.html">养生堂</a></li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="药材名-症状">
+          </div>
+           <a href="shousuo.html" target="_blank"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></a>
+          </form>
+        </li>
+
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.lzjlxf.cn/ht-4/ht-3/admin/login.php" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp&nbsp登录</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-lock"></span>&nbsp&nbsp&nbsp购物袋</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp&nbsp消息</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp&nbsp&nbsp我的收藏</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp&nbsp注册</a></li>
+          </ul>
+        </li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--导航-->
+
+<div id="fenlei"  onmouseout ="omout();">
+ <div class="container" onmouseover ="omover();" >
+   <div class="row" onmouseover ="omover();">
+   <div class="col-md-1"></div>
+   <div class="col-md-11">
+     <ul style="margin-top:20px;" class="top-yy" onmouseover ="omover();">
+       <li><a href="jiebiao.html">解表药</a></li>
+       <li><a href="#">清热药</a></li>
+       <li><a href="#">温里药</a></li>
+       <li><a href="#">泻下药</a></li>
+       <li><a href="#">平肝息风药</a></li>
+     </ul>
+     <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">理气药</a></li>
+       <li><a href="#">化湿药</a></li>
+       <li><a href="#">祛风湿药</a></li>
+       <li><a href="#">利水渗湿药</a></li>
+       <li><a href="#">清热解毒药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">化痰止咳药</a></li>
+       <li><a href="#">止血药</a></li>
+       <li><a href="#">清热凉血药</a></li>
+       <li><a href="#">补益药</a></li>
+       <li><a href="#">开窍药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">安神药</a></li>
+       <li><a href="#">活血化瘀药</a></li>
+       <li><a href="#">收涩药</a></li>
+       <li><a href="#">消食药</a></li>
+       <li><a href="#">涌吐药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">驱虫药</a></li>
+       <li><a href="#">外用药</a></li>
+         </ul>
+   </div>
+
+</div>
+ </div>
+</div>
+<!--轮播结束-->
+<!--四列开始-->
+<!--四列结束-->
+<div class="hhh"></div>
+<div class="container-fluid">
+  <div class="row container">
+<div class=" col-lg-4 col-md-4 hidden-sm  hidden-xs" style="overflow:hidden; padding-left:100px">
+<!--左边开始-->
+<div class="list-group pinned" style="float:left; text-align:right; margin-top:70px">
+  <button id="yf1" type="button" class="list-group-item active"  onclick="window.location.href='#'"><span class="zuo">竹叶石膏汤</span><sapn class="you">></span></button>
+  <button id="yf2" type="button" class="list-group-item" style="width:200px" onclick="window.location.href='#a'"><span class="zuo">出处</span><sapn class="you">></span></button>
+  <button id="yf3" type="button" class="list-group-item" onclick="window.location.href='#b'"><span class="zuo">歌诀</span><sapn class="you">></span></button>
+  <button id="yf4" type="button" class="list-group-item" onclick="window.location.href='#c'"><span class="zuo">组成</span><sapn class="you">></span></button>
+  <button id="yf5" type="button" class="list-group-item" onclick="window.location.href='#d'"><span class="zuo">方义</span><sapn class="you">></span></button>
+  <button id="yf6" type="button" class="list-group-item" onclick="window.location.href='#e'"><span class="zuo">功用</span><sapn class="you">></span></button>
+  <button id="yf7" type="button" class="list-group-item" onclick="window.location.href='#f'"><span class="zuo">主治</span><sapn class="you">></span></button>
+   <button id="yf8" type="button" class="list-group-item" onclick="window.location.href='#f'"><span class="zuo">用法</span><sapn class="you">></span></button>
+  <button id="yf9" type="button" class="list-group-item" onclick="window.location.href='#g'"><span class="zuo">君药</span><sapn class="you">></span></button>
+  <button id="yf10" type="button" class="list-group-item" onclick="window.location.href='#h'"><span class="zuo">配伍特点</span><sapn class="you">></span></button>
+  <button id="yf11" type="button" class="list-group-item" onclick="window.location.href='#j'"><span class="zuo">加减化裁</span><sapn class="you">></span></button>
+    <button type="button" class="list-group-item" onclick="window.location.href='#k'"><span class="zuo">化裁方比较</span><sapn class="you">></span></button>
+  <button id="yf12" type="button" class="list-group-item " onclick="window.location.href='#l'"><span class="zuo">禁忌</span><sapn class="you">></span></button>
+</div>
+
+<!--左边结束-->
+</div>
+
+
+<div class=" col-lg-8 col-md-8 col-sm-12 col-xs-12">
+<!--右边开始-->
+<div class="bt" id="a">竹叶石膏汤</div>
+<div class="xiana"></div>
+<div class="ms">
+竹叶石膏汤，中医方剂名。为清热剂，具有清气分热，清热生津，益气和胃之功效。主治伤寒、温病、暑病余热未清，气津两伤证。身热多汗，心胸烦热，气逆欲呕，口干喜饮，气短神疲，或虚烦不寐，舌红少苔，脉虚数。临床常用于治疗流脑后期、夏季热、中暑等余热未清、气津两伤者。
+</div>
+
+<div class="bt" id="b">出处</div>
+<div class="xiana"></div>
+<div class="ms">
+①《伤寒论·辨阴阳易差后劳复病脉证并治》：“伤寒解后，虚羸少气，气逆欲吐，竹叶石膏汤主之。”[1] <br>②汪昂《医方集解·泻火之剂》：“此手太阴、足阳明药也。竹叶、石膏辛寒以散余热；人参、甘草、麦冬、粳米之甘平以益肺安胃，补虚生津；半夏之辛温以豁痰止呕，故去热而不损其真，导逆而能益其气也。”
+</div>
+
+<div class="bt" id="c">歌诀</div>
+<div class="xiana"></div>
+<div class="ms">
+竹叶石膏汤人参，麦冬半夏甘草临，更加粳米同煎服，清热益气养阴津。
+</div>
+
+<div class="bt" id="d">组成</div>
+<div class="xiana"></div>
+<div class="ms">
+竹叶6g，石膏50g，人参6g，麦冬20g，半夏9g，甘草6g，粳米10g。
+</div>
+
+<div class="bt" id="e">方义</div>
+<div class="xiana"></div>
+<div class="ms">
+本证多由热病后期、余热未清、气津两伤，胃气不和所致。治疗以清热生津，益气和胃为主。热病后期、高热虽除，但余热留恋气分，故身热有汗不解，脉数；余热内扰，故心胸烦热；气短神疲、脉虚数为气虚的表现。方中竹叶、石膏清透气分余热，除烦止呕为君药。人参配麦冬，补气养阴生津，为臣药。半夏和胃降逆止呕，为佐药。甘草、粳米和脾养胃，为使药。
+</div>
+
+<div class="bt" id="f">功用</div>
+<div class="xiana"></div>
+<div class="ms">
+清热生津，益气和胃。
+</div>
+
+<div class="bt" id="f">主治</div>
+<div class="xiana"></div>
+<div class="ms">
+伤寒、温病、暑病余热未清，气津两伤证。身热多汗，心胸烦热，气逆欲呕，口干喜饮，气短神疲，或虚烦不寐，舌红少苔，脉虚数。
+</div>
+
+<div class="bt" id="g">用法</div>
+<div class="xiana"></div>
+<div class="ms">
+上七味，以水一斗，煮取六升，去滓，内粳米，煮米熟，汤成去米，温服一升，日三服。
+</div>
+
+<div class="bt" id="h">君药</div>
+<div class="xiana"></div>
+<div class="ms">
+石膏。
+</div>
+
+<div class="bt" id="i">配伍特点</div>
+<div class="xiana"></div>
+<div class="ms">
+半夏性温，与清热生津药配伍使用，消除其温燥之性，使降逆止呕的功效增强，使人参、麦冬补而不滞，使石膏清而不寒。本方为清补两顾之方。
+</div>
+
+<div class="bt" id="j">加减化裁</div>
+<div class="xiana"></div>
+<div class="ms">
+若胃阴不足，胃火上逆，口舌糜烂，加石斛、天花粉清热养阴生津；胃火炽盛，消谷善饥，舌红脉数者，可加知母、天花粉以增强清热生津之效；气分热犹盛，可加知母、黄连，增强清热之力。
+</div>
+
+<div class="bt" id="k">化裁方比较</div>
+<div class="xiana"></div>
+<div class="ms">
+本方由白虎汤化裁而来。白虎汤证为热盛而正不虚，本证为热势已衰，余热未尽而气津两伤。热既衰且胃气不和，故去苦寒质润的知母，加人参、麦冬益气生津，竹叶除烦，半夏和胃。其中半夏虽温，但配入清热生津药中，则温燥之性去而降逆之用存，且有助于输转津液，使参、麦补而不滞，此善用半夏者也。
+</div>
+
+<div class="bt" id="l">禁忌</div>
+<div class="xiana"></div>
+<div class="ms">
+本方清凉质润，如内有痰湿，或阳虚发热，均应忌用。
+</div>
+
+<!--右边结束-->
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<!--页脚-->
+<div id="footer" class="footer">
+<div>
+  <a class="service-item">
+    <span>
+      <img src="images/jian.png" class="service-icon">
+    </span>
+    <h3 class="service-title">药监认证</h3>
+    <p class="service-p">获得国家资格认证，值得信赖！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/shou.png" class="service-icon"> 
+    </span>
+    <h3 class="service-title">品牌授权</h3>
+    <p class="service-p">秉承行业高标准，确保正品可信!</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/yin.png" class="service-icon">
+    </span>
+    <h3 class="service-title">隐私包装</h3>
+    <p class="service-p">保密包装，充分保护个人隐私！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/huo.png" class="service-icon">
+    </span>
+    <h3 class="service-title">货到付款</h3>
+    <p class="service-p">先收货后付款，购药更放心！</p>
+  </a>
+
+  </div>
+
+   <div class="clear" ></div>
+
+  <div class="text-margin">
+    <a> &nbsp;&nbsp; &nbsp;关于我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a data-toggle="tooltip" data-placement="top" title="4008-985-985">&nbsp;&nbsp;&nbsp;  联系我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a>&nbsp;&nbsp; &nbsp; 商家入驻&nbsp;&nbsp; &nbsp; </a><span>|<span>
+    <a>  &nbsp;&nbsp;&nbsp;友情连接&nbsp;&nbsp; &nbsp; </a>
+    <br/>
+    <span class="copyr">Copyright © 2016&nbsp;&nbsp;草芳堂lzjlxf.cn 版权所有 | 粤ICP备16034642</span>
+  </div>
+</div>
+<!--页脚-->
+
+<script src="js/jquery-2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="js/backtotop.js"></script>
+<script src="js/headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+<script src="js/jquery.pin.js"></script>
+    <script type="text/javascript" >
+  function omover() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").addClass("active");
+			$('#fenlei').css({
+				'top':'50px',
+				'opacity':'1',
+				'transition':'top 0.5s,opacity 0.5s'
+				});
+
+        }
+  function omout() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").removeClass("active");
+			$('#fenlei').css({
+				'top':'-300px',
+				'opacity':'0',
+				'transition':'top 1s,opacity 0.5s'
+				});
+        }
+		
+        
+    </script>
+<script type="text/javascript">
+       
+
+</script>
+<script>
+		$(window).scroll(function() {
+			var windowHeight = $(window).scrollTop();
+				if (windowHeight > 0&& windowHeight <50 ) {
+				$("#yf1").addClass("active");
+			} else {
+				$("#yf1").removeClass("active");
+			}
+			
+			if (windowHeight > 50&& windowHeight <200 ) {
+				$("#yf2").addClass("active");
+			} else {
+				$("#yf2").removeClass("active");
+			}
+			
+			if (windowHeight > 200&& windowHeight <300 ) {
+				$("#yf3").addClass("active");
+			} else {
+				$("#yf3").removeClass("active");
+			}
+			
+			if (windowHeight > 300&& windowHeight <500 ) {
+				$("#yf4").addClass("active");
+			} else {
+				$("#yf4").removeClass("active");
+			}
+			
+					if (windowHeight > 500&& windowHeight <600 ) {
+				$("#yf5").addClass("active");
+			} else {
+				$("#yf5").removeClass("active");
+			}
+			
+			if (windowHeight > 600&& windowHeight <800 ) {
+				$("#yf6").addClass("active");
+			} else {
+				$("#yf6").removeClass("active");
+			}
+			
+			if (windowHeight > 800&& windowHeight <900 ) {
+				$("#yf7").addClass("active");
+			} else {
+				$("#yf7").removeClass("active");
+			}
+			
+				if (windowHeight > 900&& windowHeight <1000 ) {
+				$("#yf8").addClass("active");
+			} else {
+				$("#yf8").removeClass("active");
+			}
+			
+			if (windowHeight > 1000&& windowHeight <1200 ) {
+				$("#yf9").addClass("active");
+			} else {
+				$("#yf9").removeClass("active");
+			}
+			
+			if (windowHeight > 1200&& windowHeight <1400 ) {
+				$("#yf10").addClass("active");
+			} else {
+				$("#yf10").removeClass("active");
+			}
+			
+			if (windowHeight > 1400&& windowHeight <1550 ) {
+				$("#yf11").addClass("active");
+			} else {
+				$("#yf11").removeClass("active");
+			}
+			
+			if (windowHeight > 1550&& windowHeight <1700 ) {
+				$("#yf12").addClass("active");
+			} else {
+				$("#yf12").removeClass("active");
+			}
+			
+	
+		});
+	</script>
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<script type="text/javascript">
+            $(function () {
+                $(".pp").hover(
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"block"});
+				    $(this).css({"-webkit-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "-moz-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "box-shadow":" 2px 2px 6px 2px #bbb"})
+                },
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"none"});
+					$(this).css({"-webkit-box-shadow":"0px 0px 3px #fff",
+                                 "-moz-box-shadow":"0px 0px 0px #fff",
+                                 "box-shadow":"0px 0px 0px #fff"})
+                })
+            });
+        </script>
+ <script>
+	  $(".pinned").pin({containerSelector: ".container", minWidth: 940});
+</script>
+</body>
+</html>

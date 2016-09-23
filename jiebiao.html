@@ -1,0 +1,413 @@
+<!doctype html>
+<html>
+<head>
+ <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  href="images/xlogo.png" rel="shortcut icon">
+<title>解表药-草芳堂</title>
+<link href="css/reset.css" rel="stylesheet" type="text/css">
+<link href="js/bootstrap-3.3.5-dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/footer.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+#fenlei{
+	width:100%;
+	padding-bottom:20px;
+	padding-top:10px;
+	background:#e7e7e7;
+	position:fixed;
+	top:-300px;
+	z-index:99;
+	opacity:0;}
+.navbar-nav li{
+	font-size:16px;}
+.aa {
+	margin:0px auto;
+	padding:3px;
+	padding-top:6px;
+}
+.headroom {position: fixed;top: 0;left: 0;right: 0;transition: all .2s ease-in-out;}
+.headroom--unpinned {top: -100px;}
+.headroom--pinned {top: 0;}
+.scrollspy-example {
+height: 1200px;
+overflow: auto;
+position: relative;
+}
+</style>
+</head>
+<body>
+<!--导航-->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a><span style="font-size:28px; color:#900000; top:10px; left:3px;" class="glyphicon glyphicon-grain"></span></a><img src="images/logo.png" height="30"  style="margin:8px 25px 7px 0px;"/>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="index.html">首页</a></li>
+     
+        <li class="dropdown" id="by">
+          <a onmouseover ="omover();" onClick="javascript:window.location.href='jiebiao.html'" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">药材分类<span class="caret"></span></a></li>
+       <li><a href="yaofang.html">药方</a></li>
+       <li><a href="yst.html">养生堂</a></li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+            
+          <form class="navbar-form navbar-left" role="search">
+          <div class="form-group">
+          <input type="text" class="form-control" placeholder="药材名-症状">
+          </div>
+           <a href="shousuo.html" target="_blank"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button></a>
+          </form>
+        </li>
+
+       <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://www.lzjlxf.cn/ht-4/ht-3/admin/login.php" target="_blank"><span class="glyphicon glyphicon-user"></span>&nbsp&nbsp&nbsp登录</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-lock"></span>&nbsp&nbsp&nbsp购物袋</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-envelope"></span>&nbsp&nbsp&nbsp消息</a></li>
+            <li><a href="#"><span class="glyphicon glyphicon-heart"></span>&nbsp&nbsp&nbsp我的收藏</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#"><span class="glyphicon glyphicon-pencil"></span>&nbsp&nbsp&nbsp注册</a></li>
+          </ul>
+        </li>
+        <!--SSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSS-->
+      </ul>
+     </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+<!--导航-->
+
+<div id="fenlei"  onmouseout ="omout();">
+ <div class="container" onmouseover ="omover();" >
+   <div class="row" onmouseover ="omover();">
+   <div class="col-md-1"></div>
+   <div class="col-md-11">
+     <ul style="margin-top:20px;" class="top-yy" onmouseover ="omover();">
+       <li><a href="jiebiao.html">解表药</a></li>
+       <li><a href="#">清热药</a></li>
+       <li><a href="#">温里药</a></li>
+       <li><a href="#">泻下药</a></li>
+       <li><a href="#">平肝息风药</a></li>
+     </ul>
+     <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">理气药</a></li>
+       <li><a href="#">化湿药</a></li>
+       <li><a href="#">祛风湿药</a></li>
+       <li><a href="#">利水渗湿药</a></li>
+       <li><a href="#">清热解毒药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">化痰止咳药</a></li>
+       <li><a href="#">止血药</a></li>
+       <li><a href="#">清热凉血药</a></li>
+       <li><a href="#">补益药</a></li>
+       <li><a href="#">开窍药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">安神药</a></li>
+       <li><a href="#">活血化瘀药</a></li>
+       <li><a href="#">收涩药</a></li>
+       <li><a href="#">消食药</a></li>
+       <li><a href="#">涌吐药</a></li>
+     </ul>
+    <ul class="top-yy" onmouseover ="omover();">
+       <li><a href="#">驱虫药</a></li>
+       <li><a href="#">外用药</a></li>
+         </ul>
+   </div>
+
+</div>
+ </div>
+</div>
+<!--轮播结束-->
+<!--四列开始-->
+<!--四列结束-->
+ <img class="img-responsive" alt="jiebiao-banner" src="images/jiebiao-banner.png" />
+
+<div class="container-fluid">
+  <div class="row mid-pic jiebiao-margin">
+
+
+    <a href="buy.html" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao01.png" class="img-responsive medicine-img">
+      <p class="medicine-title">白菊花</p>
+      <p class="medicine-p">功效：疏风清热，平肝明目，解毒。</p>
+    </a>
+
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao02.png" class="img-responsive medicine-img">
+      <p class="medicine-title">白芷</p>
+      <p class="medicine-p">功效：祛风除湿通窍止痛，消肿排脓。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao03.png" class="img-responsive medicine-img">
+      <p class="medicine-title">薄荷</p>
+      <p class="medicine-p">功效：疏散风热，清利头目，利咽透疹。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao04.png" class="img-responsive medicine-img">
+      <p class="medicine-title">苍耳子</p>
+      <p class="medicine-p">功效：散风湿，通鼻窍，止痛。</p>
+    </a>
+</div></div>
+<div class="container-fluid">
+  <div class="row mid-pic jiebiao-margin">
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao05.png" class="img-responsive medicine-img">
+      <p class="medicine-title">柴胡</p>
+      <p class="medicine-p">功效：和解退热，疏肝解郁，升举阳气。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao06.png" class="img-responsive medicine-img">
+      <p class="medicine-title">蝉蜕</p>
+      <p class="medicine-p">功效：疏风清热，透疹止痒，息风止痉。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao07.png" class="img-responsive medicine-img">
+      <p class="medicine-title">怪柳</p>
+      <p class="medicine-p">功效：发汗透疹，发散风热。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao08.png" class="img-responsive medicine-img">
+      <p class="medicine-title">葱白</p>
+      <p class="medicine-p">功效：发汗解表，散寒通阳，解毒散结。</p>
+    </a>
+    </div></div>
+    <div class="container-fluid">
+  <div class="row mid-pic jiebiao-margin">
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao09.png" class="img-responsive medicine-img">
+      <p class="medicine-title">淡豆豉</p>
+      <p class="medicine-p">功效：解表，除烦。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao10.png" class="img-responsive medicine-img">
+      <p class="medicine-title">鹅不食草</p>
+      <p class="medicine-p">功效：祛风散寒，通鼻塞，治感冒。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao11.png" class="img-responsive medicine-img">
+      <p class="medicine-title">防风</p>
+      <p class="medicine-p">功效：祛风解表，胜湿止痛，解痉。</p>
+    </a>
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao12.png" class="img-responsive medicine-img">
+      <p class="medicine-title">浮萍</p>
+      <p class="medicine-p">功效：发汗解表，透疹止痒，利水消肿。</p>
+    </a> 
+    </div></div>
+      <div class="container-fluid">
+  <div class="row mid-pic jiebiao-margin">
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao13.png" class="img-responsive medicine-img">
+      <p class="medicine-title">葛根</p>
+      <p class="medicine-p">功效：发表解肌，透发麻疹，解热生津。</p>
+    </a> 
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao14.png" class="img-responsive medicine-img">
+      <p class="medicine-title">桂枝</p>
+      <p class="medicine-p">功效：发汗解表，温经通阳，发汗解表，。</p>
+    </a> 
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao15.png" class="img-responsive medicine-img">
+      <p class="medicine-title">生姜</p>
+      <p class="medicine-p">功效：发汗解表，温中止呕，温肺止咳。</p>
+    </a> 
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao16.png" class="img-responsive medicine-img">
+      <p class="medicine-title">苏梗</p>
+      <p class="medicine-p">功效：顺气安胎，胸腹气滞，腹胁胀痛。</p>
+    </a>   
+    </div></div>
+      <div class="container-fluid">
+  <div class="row mid-pic jiebiao-margin">
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao17.png" class="img-responsive medicine-img">
+      <p class="medicine-title">香茸</p>
+      <p class="medicine-p">功效：发汗解表，中和化温，利水消肿。</p>
+    </a> 
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao18.png" class="img-responsive medicine-img">
+      <p class="medicine-title">辛夷</p>
+      <p class="medicine-p">功效：散风寒，通鼻窍。发汗解表，温经通阳。</p>
+    </a> 
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao19.png" class="img-responsive medicine-img">
+      <p class="medicine-title">银柴胡</p>
+      <p class="medicine-p">功效：退虚热，阴虚发热，骨蒸盗汗。</p>
+    </a>  
+    <a href="#" class="col-md-3 col-sm-6 col-xs-6 medicine-item">
+      <img src="images/jiebiao20.png" class="img-responsive medicine-img">
+      <p class="medicine-title">紫苏叶</p>
+      <p class="medicine-p">功效：发表散寒，行气宽中，安泰，解鱼蟹毒。</p>
+    </a>   
+  </div>
+</div>
+<!--药材分类结束-->
+
+<nav style="text-align: center; color:#900000">
+  <ul class="pagination pagination-lg"  style="color:#900000;">
+    <li>
+      <a href="#" aria-label="Previous"  style="color:#900000;"
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="active" style="background:#900000; border:#900;"><a href="#" style="background:#900000; ">1</a></li>
+    <li><a href="#" style="color:#900000;">2</a></li>
+    <li><a href="#" style="color:#900000;">3</a></li>
+    <li><a href="#" style="color:#900000;">4</a></li>
+    <li><a href="#" style="color:#900000;">5</a></li>
+     <li><a href="#" >...</a></li>
+    <li>
+      <a href="#" aria-label="Next"  style="color:#900000;">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+<!--主体结束-->
+
+<div class="daohang" >
+<div class="gwc" data-toggle="tooltip" data-placement="left" title="购物车"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span></div>
+<div class=" gwc"  data-toggle="tooltip" data-placement="left" title="在线客服"><span class="glyphicon glyphicon-user " aria-hidden="true"></span></div>
+<div class=" gwc"><span class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></div>
+<div class=" gwc"  data-toggle="tooltip" data-placement="left" title="反馈"><span class="glyphicon glyphicon-pencil " aria-hidden="true"></span></div>
+<div id="scrollUp" class=" gwc fh" ><span class="glyphicon glyphicon-chevron-up btn-lg" aria-hidden="true" style="margin-left:-18px;margin-top:-9px;"></span></div>
+</div>
+<!--页脚-->
+<div id="footer" class="footer">
+<div>
+  <a class="service-item">
+    <span>
+      <img src="images/jian.png" class="service-icon">
+    </span>
+    <h3 class="service-title">药监认证</h3>
+    <p class="service-p">获得国家资格认证，值得信赖！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/shou.png" class="service-icon"> 
+    </span>
+    <h3 class="service-title">品牌授权</h3>
+    <p class="service-p">秉承行业高标准，确保正品可信!</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/yin.png" class="service-icon">
+    </span>
+    <h3 class="service-title">隐私包装</h3>
+    <p class="service-p">保密包装，充分保护个人隐私！</p>
+  </a>
+
+  <a class="service-item">
+    <span>
+      <img src="images/huo.png" class="service-icon">
+    </span>
+    <h3 class="service-title">货到付款</h3>
+    <p class="service-p">先收货后付款，购药更放心！</p>
+  </a>
+
+  </div>
+
+   <div class="clear" ></div>
+
+  <div class="text-margin">
+    <a> &nbsp;&nbsp; &nbsp;关于我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a data-toggle="tooltip" data-placement="top" title="4008-985-985">&nbsp;&nbsp;&nbsp;  联系我们&nbsp;&nbsp;&nbsp;  </a><span>|<span>
+    <a>&nbsp;&nbsp; &nbsp; 商家入驻&nbsp;&nbsp; &nbsp; </a><span>|<span>
+    <a>  &nbsp;&nbsp;&nbsp;友情连接&nbsp;&nbsp; &nbsp; </a>
+    <br/>
+    <span class="copyr">Copyright © 2016&nbsp;&nbsp;草芳堂lzjlxf.cn 版权所有 | 粤ICP备16034642</span>
+  </div>
+</div>
+<!--页脚-->
+
+<script src="js/jquery-2.1.4/jquery.min.js"></script>
+<script src="js/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+<script src="js/backtotop.js"></script>
+<script src="js/headroom.js"></script>
+<script src="js/jQuery.headroom.js"></script>
+    <script type="text/javascript" >
+  function omover() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").addClass("active");
+			$('#fenlei').css({
+				'top':'50px',
+				'opacity':'1',
+				'transition':'top 0.5s,opacity 0.5s'
+				});
+
+        }
+  function omout() {
+            var divlist = document.getElementById("fenlei");
+            
+			$("#by").removeClass("active");
+			$('#fenlei').css({
+				'top':'-300px',
+				'opacity':'0',
+				'transition':'top 1s,opacity 0.5s'
+				});
+        }
+		
+        
+    </script>
+<script type="text/javascript">
+        $(".navbar-fixed-top").headroom();   
+
+</script>
+<script>
+		$(window).scroll(function() {
+			var windowHeight = $(window).scrollTop();
+				if (windowHeight > 500) {
+				$('.daohang').css({
+					'display' : 'block',
+					
+				});
+			} else {
+				$('.daohang').css({
+					'display' : 'none'
+				});
+			}
+		});
+	</script>
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+</script>
+<script type="text/javascript">
+            $(function () {
+                $(".pp").hover(
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"block"});
+				    $(this).css({"-webkit-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "-moz-box-shadow":" 2px 2px 6px 2px #bbb",
+                                 "box-shadow":" 2px 2px 6px 2px #bbb"})
+                },
+                function () {
+                    $(".sc,.gm",$(this)).css({"display":"none"});
+					$(this).css({"-webkit-box-shadow":"0px 0px 3px #fff",
+                                 "-moz-box-shadow":"0px 0px 0px #fff",
+                                 "box-shadow":"0px 0px 0px #fff"})
+                })
+            });
+        </script>
+</body>
+</html>
